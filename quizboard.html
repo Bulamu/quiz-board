@@ -3,15 +3,10 @@
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="screen">
-      <link rel="icon" type="image/ico" href="images/title-icon.png">
-      <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
-      <link href="css/styles.css" rel="stylesheet" type="text/css">
       <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
       <script type="text/javascript" src="js/bootstrap.js"></script>
       <script src="js/scripts.js"></script>
-      <title>JavaScript Quiz Board</title>
+      <title>JavaScript Quiz</title>
     </head>
     <body>
      <div class="container">
@@ -19,8 +14,147 @@
          <div class="col-md col-sm col-xs">
 
            <div class="jumbotron">
-             <h1>JAVASCRIPT QUIZ BOARD</h1>
-             <p>Welcome to the JavaScript Quiz. This quiz will test your knowledge in JavaScript.</p>
+             <h1>Kisumu Senior Academy Javascript Quiz</h1>
+             <p>Welcome to the JavaScript Quiz. This quiz is designed to test your knowledge in JavaScript. The passmark is 50%, Scores below 50 will have to retake the test.</p>
            </div>
 
            <form>
+
+             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+              <div class="carousel-inner">
+                <div class="carousel-item active"> <!-- slide question 1 -->
+                  <div class="d-block w-50 question card "> <!-- question 1 -->
+                    <label for="js1">1. What is JavaScript?</label>
+                    <div>
+                      <input type="radio" id="framework" name="js1" value="0">
+                      <label for="framework">A framework</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="language" name="js1" value="20">
+                      <label for="language">A programming language</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="library" name="js1" value="0">
+                      <label for="library">A library</label>
+                    </div>
+                  </div> <!-- end question 1 -->
+                </div> <!-- end slide question 1 -->
+
+                <div class="carousel-item"> <!-- slide question 2 -->
+                  <div class="question card d-block w-50"> <!-- question 2 -->
+                    <label for="js2">2. Inside which HTML element do we put the JavaScript?</label>
+                    <div>
+                      <input type="radio" id="script" name="js2" value="20">
+                      <label for="script">&lt;script&gt;</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="javascript" name="js2" value="0">
+                      <label for="javascript">&lt;javascript&gt;</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="scripting" name="js2" value="0">
+                      <label for="scripting">&lt;scripting&gt;</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="js" name="js2" value="0">
+                      <label for="js">&lt;js&gt;</label>
+                    </div>
+                  </div> <!-- end question 2 -->
+                </div><!-- end slide question 2 -->
+
+                <div class="carousel-item"> <!-- slide question 3 -->
+                  <div class="question card d-block w-50"> <!-- question 3 -->
+                    <label for="js3">3. Where is the correct place to insert a JavaScript?</label>
+                    <div>
+                      <input type="radio" id="head-section" name="js3" value="0">
+                      <label for="head-section">The &lt;head&gt; section</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="both-section" name="js3" value="20">
+                      <label for="both-section">Both the &lt;head&gt; and the &lt;body&gt; are correct</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="body-section" name="js3" value="0">
+                      <label for="body-section">The &lt;body&gt; section</label>
+                    </div>
+                  </div> <!-- end question 3 -->
+                </div><!-- end slide question 3 -->
+
+                <div class="carousel-item"> <!-- slide question 4 -->
+                  <div class="question card d-block w-50"> <!-- question 4 -->
+                    <label for="js4">4. How do you call a function named "myFunction"?</label>
+                    <div>
+                      <input type="radio" id="function-one" name="js4" value="20">
+                      <label for="function-one">myFunction();</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="function-two" name="js4" value="0">
+                      <label for="function-two">call myFunction();</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="function-three" name="js4" value="0">
+                      <label for="function-three">call function myFunction();</label>
+                    </div>
+                  </div> <!-- end question 4 -->
+                </div> <!-- end slide question 4 -->
+
+                <div class="carousel-item"> <!-- slide question 5 -->
+                  <div class="question card d-block w-50"> <!-- question 5 -->
+                    <label for="js5">5. What is the correct way to write a JavaScript array?</label>
+                    <div>
+                      <input type="radio" id="array-one" name="js5" value="0">
+                      <label for="array-one">var colors = "red", "green", "blue";</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="array-two" name="js5" value="0">
+                      <label for="array-two">var colors = (1:"red", 2:"green", 3:"blue");</label>
+                    </div>
+                    <div>
+                      <input type="radio" id="array-three" name="js5" value="20">
+                      <label for="array-three">var colors = ["red", "green", "blue"];</label>
+                    </div>
+                  </div> <!-- end question 5 -->
+
+
+                </div> <!-- end slide question 5 -->
+              </div> <!-- end carousel inner -->
+
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+              </ol>
+
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div> <!-- end carousel -->
+
+            <div class="quiz-buttons">
+              <button class="bg-success" type="submit" name="button">SCORE!</button>
+              <button class="bg-info" type="button" name="button" onclick="reload();">RELOAD</button>
+            </div>
+           </form>
+
+
+           <div class="card your-score">
+             <div id="message">     </div>
+             <div id="display">     </div>
+             <div id="remark">     </div>
+           </div>
+
+           <p class="copyright jumbotron">Copyright© 2018 <span class="copyname">Bulamu Richard </span></p>
+
+         </div>  <!--End div col -->
+        </div>     <!--End div row -->
+     </div> <!--End div container -->
+    </body>
+  </html>

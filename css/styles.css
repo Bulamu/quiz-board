@@ -1,0 +1,103 @@
+blackbody {
+  font-size: 125%;
+  background-color: grey;
+  color: white;
+  font-family: 'Inconsolata', monospace;
+  /* height: 100vh; */
+}
+
+.card {
+  width: 600px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background-color: grey;
+  border-color: white;
+  border-width: thick;
+
+}
+
+.jumbotron {
+  display: inline-block;
+  padding: 5px;
+  color: black;
+  font-family: 'Audiowide', cursive;
+  width: 1200px;
+  margin-top: 20px;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+}
+
+.card > label {
+  border: 2px solid white;
+}
+
+input {
+  margin-left: 5px;
+}
+
+.your-score {
+  text-align: center;
+  font-weight: bold;
+  font-size: 150%;
+}
+
+.quiz-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-indicators {
+  position: relative;
+  margin-top: 15px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  color: green;
+}
+
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  width: 1000px;
+}
+
+.copyname {
+  font-family: 'Satisfy', cursive;
+  font-weight: bold;
+}
+
+p > img {
+  height: 30px;
+  width: 30px;
+}
+
+
+/* responsive design */
+@media (max-width: 900px) {
+  .container {
+    width: 500px;
+  }
+  .jumbotron {
+    width: 400px;
+  }
+}
+@media (max-width: 768px) {
+  .container {
+    width: 400px;
+  }
+  .jumbotron {
+    width: 400px;
+  }
+}
+@media (max-width: 480px) {
+  .container {
+    width: 250px;
+  }
+  .jumbotron {
+    width: 400px;
+  }
+}
